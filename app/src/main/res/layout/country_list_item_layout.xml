@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/country_list_item_height">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/country_list_item_image_view_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/image_view_pad"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/country_list_item_name_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="18sp"
+            android:text="@string/name"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/country_list_item_capital_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alike_angular"
+            android:text="@string/capital"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
